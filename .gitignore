@@ -61,7 +61,15 @@ typings/
 .next
 
 \.idea/
+*.iml
 
 build/
 
 dist/
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
