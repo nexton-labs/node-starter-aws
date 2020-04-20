@@ -25,7 +25,7 @@ resource "aws_ecr_repository" "demo-app-repository" {
 }
 resource "aws_cloudformation_stack" "vpc" {
   name = "${local.aws_vpc_stack_name}"
-  template_body = "${file("cloudformation-templates/public-vpc.yml")}"
+  template_body = "${file("cloudformation_templates/public-vpc.yml")}"
   capabilities = ["CAPABILITY_NAMED_IAM"]
   parameters = {
     ClusterName = "${local.aws_ecs_cluster_name}"
@@ -36,7 +36,7 @@ resource "aws_cloudformation_stack" "vpc" {
 # Note: creates task definition and task definition family with the same name as the ServiceName parameter value
 resource "aws_cloudformation_stack" "ecs_service" {
   name = "${local.aws_ecs_service_stack_name}"
-  template_body = "${file("cloudformation-templates/public-service.yml")}"
+  template_body = "${file("cloudformation_templates/public-service.yml")}"
   depends_on = ["aws_cloudformation_stack.vpc", "aws_ecr_repository.demo-app-repository"]
 
   parameters = {
