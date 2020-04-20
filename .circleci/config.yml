@@ -87,6 +87,9 @@ workflows:
             - lint
             - unit-tests
             - build
+          filters:
+            branches:
+              only: develop
           account-url: "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
           repo: "${AWS_RESOURCE_NAME_PREFIX}"
           region: ${AWS_DEFAULT_REGION}
@@ -96,7 +99,7 @@ workflows:
             - aws-ecr/build_and_push_image
           filters:
             branches:
-              only: ecs-ecr-integration
+              only: develop
           aws-region: ${AWS_DEFAULT_REGION}
           family: "${AWS_RESOURCE_NAME_PREFIX}-service"
           cluster-name: "${AWS_RESOURCE_NAME_PREFIX}-cluster"
