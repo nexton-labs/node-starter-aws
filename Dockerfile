@@ -27,7 +27,6 @@ RUN	cd /var/www/node \
     && rm -rf node_modules/aws-sdk/dist/* \
     && rm -rf node_modules/aws-sdk/clients/* \
     && rm -rf node_modules/aws-sdk/apis/* \
-    && rm -rf node_modules/swagger-ui-express/static/* \
     && rm -rf node_modules/sinon/pkg/*
 
 
