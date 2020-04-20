@@ -24,7 +24,6 @@ RUN	cd /var/www/node \
     && yarn build:tsoa \
     && yarn cache clean \
     && npm prune --production \
-    && rm -rf node_modules/typescript/lib/* \
     && rm -rf node_modules/aws-sdk/dist/* \
     && rm -rf node_modules/aws-sdk/clients/* \
     && rm -rf node_modules/aws-sdk/apis/* \
