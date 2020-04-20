@@ -1,0 +1,26 @@
+{
+  "swagger": {
+    "entryFile": "./build/routes.ts",
+    "outputDirectory": "./build/swagger",
+    "specMerging": "recursive",
+    "spec": {},
+    "tags":[
+      {
+        "name": "User",
+        "description": "Operations about users",
+        "externalDocs": {
+          "description": "Find out more about users",
+          "url": "http://swagger.io"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "entryFile": "./src/controllers/index.ts",
+    "routesDir": "./build",
+    "basePath": "/service/",
+    "authenticationModule": "./src/auth.ts",
+    "middleware": "express",
+    "iocModule": "./src/ioc"
+  }
+}

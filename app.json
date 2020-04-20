@@ -1,0 +1,30 @@
+{
+  "name": "node-starter-v2",
+  "description": "Node starter project",
+  "repository": "https://github.com/nexton-labs/node-starter-v2",
+  "logo": "http://oi67.tinypic.com/oh8n7s.jpg",
+  "keywords": ["node", "express", "static", "typescript", "inversify"],
+  "env": {
+    "PORT": {
+      "value": "3030"
+    },
+    "SQL_DB": {
+      "value": "siuenqtb"
+    },
+    "SQL_USERNAME": {
+      "value":"siuenqtb"
+    },
+    "SQL_PASSWORD":{
+      "value":"E1RmruRroJluR58zcqUglTbRzBBjVgsi"
+    },
+    "SQL_HOST":{
+      "value":"isilo.db.elephantsql.com"
+    },
+    "SQL_PORT":{
+      "value":"5432"
+    },
+    "SQL_DIALECT":{
+      "value":"postgres"
+    }
+  }
+}
