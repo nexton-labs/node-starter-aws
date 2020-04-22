@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/nexton-labs/node-starter-aws/tree/master.svg?style=svg)](https://circleci.com/gh/nexton-labs/node-starter-aws/tree/master)
+[![CircleCI](https://circleci.com/gh/nexton-labs/node-starter-aws/tree/develop.svg?style=svg)](https://circleci.com/gh/nexton-labs/node-starter-aws/tree/develop)
 # Node Starter
 
 
